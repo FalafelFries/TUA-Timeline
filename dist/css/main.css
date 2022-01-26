@@ -1,3 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 body {
   background-color: #282828;
-  color: #f2f1ee; }
+  color: #f2f1ee;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden; }
+
+#wrapper {
+  padding: 2vh 0; }
+
+#main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #main-header #logo {
+    background-image: url("../img/main.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%; }
+  #main-header #menu ul {
+    height: 7vh;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #main-header #menu ul li {
+      margin: 0 15px;
+      font-family: "Bebas Neue", cursive; }
+      #main-header #menu ul li a {
+        text-decoration: none;
+        color: #f2f1ee;
+        font-size: 2rem; }
+
+.fa-chevron-right {
+  margin-right: 0.7rem; }
+
+.fa-chevron-left {
+  margin-left: 0.7rem; }
+
+#timeline {
+  margin: 5vh 0; }
+  #timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    background: #f2f1ee;
+    padding-top: 3rem; }
+    #timeline ul li div {
+      position: relative;
+      bottom: 0;
+      width: 35vw;
+      padding: 2rem;
+      background: #333333;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.5s ease-in-out; }
+      #timeline ul li div:before {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        width: 0;
+        height: 0;
+        border-style: solid; }
+      #timeline ul li div h3 {
+        padding: 5px;
+        font-size: 1.5rem; }
+      #timeline ul li div p {
+        padding: 5px;
+        font-size: 1rem; }
+    #timeline ul li:nth-child(odd) div {
+      left: 5.5vw;
+      transform: translate(10vw, 0); }
+      #timeline ul li:nth-child(odd) div:before {
+        left: -15px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 0;
+        border-bottom: 10px solid transparent;
+        border-right: 16px solid #333333; }
+    #timeline ul li:nth-child(even) {
+      text-align: right; }
+      #timeline ul li:nth-child(even) div {
+        left: -39.5vw;
+        transform: translate(-10vw, 0); }
+        #timeline ul li:nth-child(even) div:before {
+          right: -15px;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-left: 16px solid #333333;
+          border-bottom: 10px solid transparent;
+          border-right: 0; }
+    #timeline ul li:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: inherit;
+      transform: translateX(-50%);
+      transition: background 0.5s ease-in-out; }
+  #timeline ul li.show div {
+    transform: none;
+    visibility: visible;
+    opacity: 1; }
+  #timeline ul li.show:after {
+    background: #333333; }
