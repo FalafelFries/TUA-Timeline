@@ -15,6 +15,7 @@ body {
 
 #wrapper {
 	padding: 2vh 0;
+	/* width: 100vw; */
 }
 
 #main-header {
@@ -30,6 +31,16 @@ body {
 		height: 400px;
 		width: 100%;
 	}
+
+	/* img {
+    width: 100%;
+    height: 20%;
+    object-fit: contain;
+
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+	} */
 
 	#menu {
 		ul {
@@ -181,3 +192,7 @@ body {
 		}
 	}
 }
+
+@import "breakpt1";
+@import "breakpt2";
+@import "breakpt3";

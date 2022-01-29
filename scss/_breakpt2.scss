@@ -1,0 +1,16 @@
+$breakpt2: "max-width: 505px";
+$path_to_bgimg2: "../img/400x200.png";
+
+@media ($breakpt2) {
+	#main-header {
+		height: 40vh;
+		#logo {
+			background-image: url($path_to_bgimg2);
+			height: 100%;
+			width: 100%;
+		}
+		#menu {
+			height: fit-content;
+		}
+	}
+}

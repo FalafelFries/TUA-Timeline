@@ -1,0 +1,46 @@
+$breakpt1: "max-width: 700px";
+$path_to_bgimg1: "../img/446x233.png";
+
+@media ($breakpt1) {
+	#main-header {
+		height: 50vh;
+
+		#logo {
+			background-image: url($path_to_bgimg1);
+			/* background-size: contain; */
+			height: 100%;
+			width: 100%;
+		}
+		#menu {
+			height: fit-content;
+		}
+	}
+
+	#timeline {
+		ul {
+			li {
+				margin-left: 30px;
+
+				div {
+					margin-left: 16px;
+					width: 80vw;
+				}
+
+				&:nth-child(even) {
+					div {
+						left: 5vw; //must
+
+						&:before {
+							left: -15px;
+							border-width: 8px 16px 8px 0;
+							border-top: 10px solid transparent;
+							border-left: 0;
+							border-bottom: 10px solid transparent;
+							border-right: 16px solid $med-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
