@@ -4,6 +4,7 @@ $path_to_bgimg3: "../img/250x125.png";
 @media ($breakpt2) {
 	#main-header {
 		height: 29vh;
+
 		#logo {
 			background-image: url($path_to_bgimg3);
 			height: 100%;
