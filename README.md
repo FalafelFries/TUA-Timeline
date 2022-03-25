@@ -10,3 +10,5 @@ Set against the ticking clock of an impending apocalypse, The Umbrella Academy i
 Content for the timeline was taken from:
 
 [S01](https://www.ji9saw.com/netflix-umbrella-academy-timeline-season-1/)
+
+[S02](https://www.menshealth.com/entertainment/a33445019/umbrella-academy-timeline-season-2/)
